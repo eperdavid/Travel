@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap');
+
+*{
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+nav{
+    padding: 0 6rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    -webkit-box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.2);
+    -moz-box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.2);
+    border-radius: 0 0 10px 10px;
+    min-width: 250px;
+    user-select: none;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    padding: 0;
+}
+
+ul a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    padding: 5px 10px;
+}
+
+.logo{
+    padding: 1.6rem 0;
+}
+
+.logo a{
+    font-size: 32px;
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+}
+
+.icon{
+    font-size: 18px;
+}
+
+#checkbtn{
+    display: none;
+    font-size: 32px;
+    margin-left: 10px;
+}
+
+@media (max-width: 960px) {
+    #checkbtn{
+        display: inline;
+    }
+
+    .menu{
+        display: none;
+    }
+
+    nav{
+        align-items: baseline;
+    }
+
+    .navstyle{
+        height: 100vh;
+    }
+
+    .menustyle{
+        display: block;
+        text-align: center;
+        padding: 16px 0;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 5rem;
+    }
+
+    .menu ul{
+        flex-direction: column;
+    }
+
+    nav{
+        padding: 0 2rem;
+    }
+}

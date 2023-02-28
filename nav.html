@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="nav.css" rel="stylesheet">
+    <title>Nav</title>
+</head>
+<body>
+    <nav id="nav">
+        
+        <div class="logo"><a href="nav.html">Travel</a></div>
+        <div class="menu" id="menus">
+            <ul>
+                <li><a href="#">Kezdőoldal</a></li>
+                <li><a href="#">Felfedezés</a></li>
+                <li><a href="#">Kapcsolat</a></li>
+                <li><a href="#">Rólunk</a></li>
+            </ul>
+        </div>
+        <div class="icon"><i class="fa-solid fa-user fa-xl"></i>
+
+        <label for="check"><i class="fa-solid fa-bars fa-xl" id="checkbtn" onclick="navFunction()"></i></label>
+        </div>
+        
+    </nav>
+
+    <script>
+        function navFunction() {
+           var nav = document.getElementById("nav");
+           var menu = document.getElementById("menus");
+           nav.classList.toggle("navstyle");
+           menu.classList.toggle("menustyle");
+        }
+        </script>
+</body>
+</html>
