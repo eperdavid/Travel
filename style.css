@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+.pic img{
+    width: 100%;
+    height: 800px;
+    object-fit: cover;
+}
+
+.pic{
+    position: relative;
+}
+
+.content{
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.swipcontainer{
+    width: 95%;
+    margin: 0 auto;
+}
+ 
+.card {
+    transition: 0.3s;
+    max-width: 650px;
+    min-width: 270px;
+  }
+
+.card img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 30px;
+}
+  
+.container {
+    padding: 1rem 0;
+    display: flex;
+    align-items: baseline;
+}
+
+.container span{
+    font-size: 24px;
+}
+
+.container .city{
+    font-size: 16px;
+}
+
+/*------ Swiper ------*/
+
+.swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+/*--------------------*/
+
+
+@media (max-width: 760px) {
+    .pic img{
+        height: 600px;
+    } 
+}
+
+@media (max-width: 880px) {
+    .popular h1{
+        font-size: 24px;
+    }
+    
+}
+
+@media (max-width: 900px) and (min-width: 750px){
+
+    .card .container span{
+        font-size: 20px;
+    }
+
+    .card .container .city{
+        font-size: 15px;
+    }
+
+}
+
+@media (max-width: 550px) {
+    .popular h1{
+        font-size: 19px;
+    }
+
+    .card .container span{
+        font-size: 20px;
+    }
+
+    .card .container .city{
+        font-size: 15px;
+    }
+}
